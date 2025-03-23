@@ -1,0 +1,2 @@
+# find_your_own_fxxking_problem
+怎麼不找找自己問題
