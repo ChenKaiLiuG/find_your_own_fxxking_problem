@@ -1,6 +1,7 @@
 # find_your_own_fxxking_problem
 
 ## About
+**作為YukiLab搞抽象的地方**
 紀錄 [@tobiichi3227](https://github.com/tobiichi3227) 教授做效果的精華
 
 ## 怎麼不找找自己問題
