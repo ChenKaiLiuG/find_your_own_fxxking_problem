@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>逐字顯示</title>
+    <style>
+        #output {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        async function loadAndDisplay() {
+            try {
+                const response = await fetch('/get_file_content');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const text = await response.text();
+                let index = 0;
+                const outputDiv = document.getElementById('output');
+
+                function displayNextChar() {
+                    if (index < text.length) {
+                        outputDiv.textContent += text[index];
+                        index++;
+                        setTimeout(displayNextChar, 1000); // 每秒顯示一個字
+                    }
+                }
+
+                displayNextChar();
+
+            } catch (error) {
+                console.error('無法載入檔案內容:', error);
+                document.getElementById('output').textContent = '無法載入檔案內容。';
+            }
+        }
+
+        window.onload = loadAndDisplay;
+    </script>
+</body>
+</html>
