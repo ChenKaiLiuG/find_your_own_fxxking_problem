@@ -2,7 +2,7 @@
  
  ## About
  **作為YukiLab搞抽象的地方**
- 紀錄 [@tobiichi3227](https://github.com/tobiichi3227) 教授做效果的精華  
+ 紀錄 [@tobiichi3227](https://github.com/tobiichi3227) 教授的上課講義~~做效果的精華~~  
  [找找自己問題](https://github.com/ChenKaiLiuG/find_your_own_fxxking_problem/blob/main/%E6%89%BE%E6%89%BE%E8%87%AA%E5%B7%B1%E5%95%8F%E9%A1%8C.txt)  
  [回答我](https://github.com/ChenKaiLiuG/find_your_own_fxxking_problem/blob/main/%E5%9B%9E%E7%AD%94%E6%88%91.txt)  
  
