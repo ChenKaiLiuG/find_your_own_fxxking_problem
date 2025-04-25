@@ -1,0 +1,44 @@
+/* （前面原本的都保留）... */
+
+/* 新增：切換模式按鈕 */
+#toggle-theme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s, color 0.3s;
+}
+
+#toggle-theme:hover {
+    background-color: rgba(200, 200, 200, 0.9);
+}
+
+/* 深色模式 */
+.dark-mode {
+    background-color: #111; /* 深色背景 */
+}
+
+.dark-mode #bg-video {
+    opacity: 0.1; /* 背景影片淡掉 */
+}
+
+.dark-mode body {
+    background-color: #111;
+    color: #eee;
+}
+
+.dark-mode .card {
+    background: rgba(50, 50, 50, 0.85);
+}
+
+.dark-mode #toggle-theme {
+    background-color: rgba(50, 50, 50, 0.8);
+    color: #eee;
+}
