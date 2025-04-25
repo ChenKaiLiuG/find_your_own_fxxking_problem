@@ -157,3 +157,37 @@ p {
     background-color: rgba(50, 50, 50, 0.8);
     color: #eee;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* 預設：一列一個 */
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 卡片本身 */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* 卡片圖片 */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 讓橫向螢幕排兩個卡片 */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr; /* 兩列 */
+    }
+}
